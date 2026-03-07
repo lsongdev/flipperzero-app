@@ -1,0 +1,18 @@
+# For details & more options, see documentation/AppManifests.md in firmware repo
+
+App(
+    appid="myapp",  # Must be unique
+    name="My App",  # Displayed in menus
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="flipper_hello_app",
+    requires=["gui"],
+    stack_size=1 * 1024,
+    fap_category="Examples",
+    # Optional values
+    fap_version="0.1",
+    fap_icon="icon.png",  # 10x10 1-bit PNG
+    fap_description="A simple app",
+    fap_author="Lsong",
+    fap_weburl="https://github.com/lsongdev",
+    fap_icon_assets="images",  # Image assets to compile for this application
+)
